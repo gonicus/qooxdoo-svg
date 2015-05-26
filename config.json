@@ -1,0 +1,38 @@
+{
+  "name"    : "svg",
+
+  "include" :
+  [
+    {
+      "path" : "${QOOXDOO_PATH}/tool/data/config/application.json"
+    }
+  ],
+
+  "export" :
+  [
+    "api",
+    "clean",
+    "distclean",
+    "fix",
+    "info",
+    "inspector",
+    "lint",
+    "migration",
+    "pretty",
+    "test",
+    "test-source",
+    "translation"
+  ],
+
+  "let" :
+  {
+    "APPLICATION"  : "svg",
+    "QOOXDOO_PATH" : "../../qooxdoo/1.5",
+    "QXTHEME"      : "qx.theme.Modern",
+    "INCLUDE"      : ["svg.core.Types"],
+    "API_EXCLUDE"  : ["qx.*", "${APPLICATION}.demo.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*"],
+    "LOCALES"      : [ "en" ],
+    "CACHE"        : "${TMPDIR}/cache",
+    "ROOT"         : "."
+  }
+}

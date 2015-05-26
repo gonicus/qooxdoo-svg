@@ -1,0 +1,34 @@
+{
+  "info" : 
+  {
+    "name" : "SVG Demo",
+
+    "summary" : "SVG Demo",
+    "description" : "",
+    
+    "homepage" : "http://demo.qooxdoo.org/contrib/SVG",
+
+    "license" : "LGPL/EPL",
+    "authors" : 
+    [
+      {
+        "name" : "Marc Puts",
+        "email" : "marc.puts@realtimesolutions.nl"
+      }
+    ],
+
+    "version" : "trunk",
+    "qooxdoo-versions": ["1.4", "1.5"]
+  },
+  
+  "provides" : 
+  {
+    "namespace"   : "svg.demo",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "application"
+  }
+}
+
