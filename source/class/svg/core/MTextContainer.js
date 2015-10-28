@@ -18,6 +18,14 @@
  */
 qx.Mixin.define("svg.core.MTextContainer",
 {
+  events : {
+
+    /**
+     * Fires on call of {@link #setValue}. Data is the new value.
+     */
+    changeValue : "qx.event.type.Data"
+  },
+
   members :
   {
     /**
@@ -28,6 +36,7 @@ qx.Mixin.define("svg.core.MTextContainer",
      */
     setValue : function(value) {
       this.getDomElement().textContent = value;
+      this.fireDataEvent("changeValue", value);
     },
 
 
