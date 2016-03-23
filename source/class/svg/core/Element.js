@@ -242,7 +242,8 @@ qx.Class.define("svg.core.Element",
       //get event type from listener id
       var type = id.split("|")[0];
 
-      if (qx.bom.Event.supportsEvent(this.__svgElement, type)) {
+      if (qx.bom.Event.supportsEvent(this.__svgElement, type) ||
+          qx.lang.String.startsWith(type, "pointer")) {
         //remove listener from native event
         return this.base(arguments, id);
       }
