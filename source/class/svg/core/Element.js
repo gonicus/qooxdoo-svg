@@ -190,8 +190,9 @@ qx.Class.define("svg.core.Element",
         return null;
       }
 
-      if (qx.bom.Event.supportsEvent(this.__svgElement, type) ||
-          qx.lang.String.startsWith(type, "pointer")) {
+      if (type !== "animationEnd" &&
+           (qx.bom.Event.supportsEvent(this.__svgElement, type) ||
+            qx.lang.String.startsWith(type, "pointer"))) {
         //attach listener to native event
         return this.base(arguments, type, listener, self, capture);
       }
