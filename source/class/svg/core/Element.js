@@ -257,6 +257,7 @@ qx.Class.define("svg.core.Element",
   },
 
   destruct : function() {
+    this.__svgElement.$$widget = null;
     this.__svgElement = null;
   }
 });
