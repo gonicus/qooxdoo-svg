@@ -1,3 +1,7 @@
+This is a fork of the original SVG contribution which has been created
+by Marc Puts <marc.puts@realtimesolutions.nl>. This version mainly
+contains fixes over the original one.
+
 === SVG ===
 
 This file contains an unorganized list of todo's, ideas and improvements.
